@@ -51,7 +51,7 @@ def read_article(url):
                 _article_authors.append(tag.text)
 
     except:
-        print('oh')
+        _article_authors = []
 
     _article_dict = {URL: _article_url, ID: _article_id, TITLE: _article_title, TEASER_TITLE: _article_teaser, AUTHORS: _article_authors, PUBLISHED_TIME: _article_published_time, MODIFIED_TIME: _article_modified_time, CATEGORY: _article_category}
     return(_article_dict)
